@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Mohammed Loay Qudaih - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1E293B",
+                        "accent": "#F59E0B",
+                        "surface": "#0F172A",
+                        "text-main": "#F8FAFC",
+                        "secondary": "#e9c176"
+                    },
+                    fontFamily: {
+                        "cairo": ["Cairo", "sans-serif"],
+                        "manrope": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(233, 193, 118, 0.15);
+        }
+        .amber-glow:hover {
+            box-shadow: 0 0 20px rgba(233, 193, 118, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-surface text-text-main font-cairo selection:bg-accent/30">
+
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-accent/50 overflow-hidden">
+                    <img src="https://via.placeholder.com/100" alt="M. Loay Qudaih" class="w-full h-full object-cover">
+                </div>
+                <span class="text-sm md:text-base font-bold text-accent font-manrope tracking-tight">
+                    M. Loay Qudaih
+                </span>
+            </div>
+            
+            <div class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="#" class="hover:text-accent transition-colors">الرئيسية</a>
+                <a href="#portfolio" class="hover:text-accent transition-colors">المشاريع</a>
+                <a href="#stores" class="hover:text-accent transition-colors">المتاجر</a>
+                <a href="#contact" class="hover:text-accent transition-colors">اتصل بي</a>
+            </div>
+
+            <a href="https://wa.me/970597159807" class="bg-accent text-primary px-4 py-1.5 rounded-md text-sm font-bold hover:scale-105 transition-transform">
+                تواصل معي
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-28">
+        <section class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row-reverse items-center gap-10">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-accent/10 rounded-full blur-3xl"></div>
+                    <img src="https://via.placeholder.com/350" alt="Mohammed Loay Qudaih" class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl object-cover border border-accent/30 shadow-2xl">
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 text-center md:text-right space-y-6">
+                <h1 class="text-4xl md:text-6xl font-manrope font-extrabold text-accent leading-tight">
+                    Mohammed Loay Qudaih
+                </h1>
+                <p class="text-xl text-slate-400 font-medium leading-relaxed">
+                    هندسة أنظمة حاسوب | متخصص في تقديم حلول رقمية وإبداعية متكاملة
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
+                    <a href="https://wa.me/970597159807" class="bg-accent text-primary px-8 py-3 rounded-lg text-lg font-bold hover:shadow-lg transition-all">
+                        ابدأ مشروعك الآن
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-800/50">
+            <div class="mb-12 text-center md:text-right">
+                <h2 class="text-3xl font-bold text-accent mb-4">معرض المشاريع</h2>
+                <p class="text-slate-400">تصاميم إبداعية لشركة الفرقان ميديا</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-2xl bg-primary/20 border border-slate-800 amber-glow">
+                    <img src="1139.jpg" alt="ألوان التصميم" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-80 flex flex-col justify-end p-6">
+                        <h3 class="text-lg font-bold">تأثير الألوان على العميل</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-primary/20 border border-slate-800 amber-glow">
+                    <img src="1138.jpg" alt="حملات السوشيال ميديا" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-80 flex flex-col justify-end p-6">
+                        <h3 class="text-lg font-bold">أقوى حملات السوشيال ميديا</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl bg-primary/20 border border-slate-800 amber-glow">
+                    <img src="1137.jpg" alt="العلامة التجارية" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-80 flex flex-col justify-end p-6">
+                        <h3 class="text-lg font-bold">إبراز العلامة التجارية</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stores" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-800/50">
+            <div class="mb-12 text-center md:text-right">
+                <h2 class="text-3xl font-bold text-accent mb-4">قسم المتاجر والأعمال</h2>
+                <p class="text-slate-400">قائمة ببعض المتاجر والمنصات الرقمية المنفذة</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="https://nourperfumes.com/" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Nour Perfumes</a>
+                <a href="https://Ashrafalkhawalda.com/" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Ashraf Alkhawalda</a>
+                <a href="https://luxury-vision-group.com/" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Luxury Vision</a>
+                <a href="https://incense-sa.com/" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Incense SA</a>
+                <a href="https://skyhealth-eg.com/" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Sky Health</a>
+                <a href="https://salalahshop.com" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Salalah Shop</a>
+                <a href="https://almasagolden.com" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Almasa Golden</a>
+                <a href="https://mobiloil-eg.com" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Mobil Oil</a>
+                <a href="https://Mithaqq.com" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Mithaqq</a>
+                <a href="https://dolcemundo.com" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Dolce Mundo</a>
+                <a href="https://almystrosport.com" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Almystro Sport</a>
+                <a href="https://diska.online" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Diska Online</a>
+                <a href="https://vorq.io/" target="_blank" class="p-4 bg-primary/30 border border-slate-700 rounded-xl text-center hover:border-accent transition-all">Vorq.io</a>
+            </div>
+        </section>
+
+        <section id="contact" class="max-w-7xl mx-auto px-6 py-20 text-center">
+            <div class="bg-primary-container p-12 rounded-3xl border border-slate-800">
+                <h2 class="text-3xl font-bold mb-8">تواصل معي لمناقشة مشروعك</h2>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://wa.me/970597159807" class="bg-green-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-green-700 transition-all">واتساب</a>
+                    <a href="mailto:mohammedxxloay@gmail.com" class="border border-accent text-accent px-8 py-3 rounded-xl font-bold hover:bg-accent/10 transition-all">البريد الإلكتروني</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-slate-800 text-center">
+        <p class="text-slate-500">© 2026 جميع الحقوق محفوظة لـ Mohammed Loay Qudaih</p>
+    </footer>
+
+</body>
+</html>
